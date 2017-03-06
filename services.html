@@ -283,7 +283,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="pricing_plan" ">
+					<div class="pricing_plan">
 						<div class="plan_title"><h6>HAU</h6></div>
 
 
@@ -500,6 +500,14 @@
 				return false;
 			});
 		});
+		$(document).bind("contextmenu",function(e) {
+ 		e.preventDefault();
+		});
+		$(document).keydown(function(e){
+  		  if(e.which === 123){
+     		  return false;
+    }
+});
 	</script>
 </body>
 </html>
